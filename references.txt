@@ -1,0 +1,2 @@
+Generic code base
+https://github.com/reachabhishekroy/AzDevOpsApp2/blob/master/ARM/VirtualMachine/deploy.json
