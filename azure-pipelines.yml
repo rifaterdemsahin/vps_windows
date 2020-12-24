@@ -10,9 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Started creating infra in Azure for VM
+- script:  echo "RDS Server Creation Started"
   displayName: 'STEP 1'
 
-- script: |
-    echo finished infrastructure creation
+- script:  echo "RDS Server Creation Ended"
   displayName: 'STEP 2'
