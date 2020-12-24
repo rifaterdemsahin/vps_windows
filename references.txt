@@ -1,2 +1,8 @@
-Generic code base
+
+
+Arm Template from Azure AzDevOps
+https://adamtheautomator.com/azure-devops-pipeline-infrastructure/
+
+
+Virtual Machine ARM Generic code base
 https://github.com/reachabhishekroy/AzDevOpsApp2/blob/master/ARM/VirtualMachine/deploy.json
