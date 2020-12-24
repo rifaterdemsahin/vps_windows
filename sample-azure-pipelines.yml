@@ -1,0 +1,4 @@
+steps:
+
+  - script: echo "RDS Server Creation Started"
+  - script: echo "RDS Server Creation Ended"
