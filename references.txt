@@ -9,3 +9,6 @@ https://github.com/reachabhishekroy/AzDevOpsApp2/blob/master/ARM/VirtualMachine/
 
 Simple VM in Azure (Maps to Pexabo)
 https://github.com/Azure/azure-quickstart-templates/tree/master/101-vm-simple-windows
+
+Similar Process with Contract
+https://medium.com/swlh/complex-infrastructure-as-code-via-azure-devops-yaml-pipeline-687a672915c4
