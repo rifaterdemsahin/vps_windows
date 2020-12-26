@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script:  echo "RDS Server Creation Started"
+- script:  echo "RDS Server Creation Started New Account"
   displayName: 'STEP 1'
 
 - script:  echo "RDS Server Creation Ended"
