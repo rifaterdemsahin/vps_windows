@@ -1,26 +1,12 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "adminUsername": {
-       "defaultValue": "adminpexabo",
-       "value": "adminpexabo"
+    "roleDefinitionID": {
+      "value": "b24988ac-6180-42a0-ab88-20f7382dd24c"
     },
-    "adminPassword": {
-       "defaultValue": "KKmm1234!KKmm1234!",
-       "value": "KKmm1234!KKmm1234!"
-    },
-    "vmName": {
-      "type": "string",
-      "defaultValue": "simple-vm",
-        "value": "simple-vm",
-      "metadata": {
-        "description": "Name of the virtual machine."
-      }
-    },
-    "dnsLabelPrefix": {
-       "defaultValue":  "pexabo2",
-       "value":  "pexabo2"
+    "principalId": {
+      "value": "b8ed4669-ce0b-480e-930a-3cb592c13c22"
     }
   }
 }
