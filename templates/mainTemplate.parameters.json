@@ -19,8 +19,8 @@
       }
     },
     "dnsLabelPrefix": {
-       "defaultValue":  "[toLower(concat(parameters('vmName'),'-', uniqueString(resourceGroup().id, parameters('vmName'))))]",
-       "value":  "[toLower(concat(parameters('vmName'),'-', uniqueString(resourceGroup().id, parameters('vmName'))))]"
+       "defaultValue":  "pexabo2",
+       "value":  "pexabo2"
     }
   }
 }
