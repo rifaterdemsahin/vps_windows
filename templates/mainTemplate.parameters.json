@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-       "defaultValue": "adminKK",
-       "value": "adminKK"
+       "defaultValue": "admin",
+       "value": "admin"
     },
     "adminPassword": {
        "defaultValue": "KKmm1234!KKmm1234!",
-       "value": "adminKK"
+       "value": "KKmm1234!KKmm1234!"
     },
     "dnsLabelPrefix": {
-       "defaultValue": "admin",
-       "value": "adminKK"
+       "defaultValue": "pexabo",
+       "value": "pexabo"
     }
   }
 }
