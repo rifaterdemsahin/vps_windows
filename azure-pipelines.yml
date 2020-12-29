@@ -15,7 +15,7 @@ steps:
 
 - task: AzurePowerShell@5
   inputs:
-    azureSubscription: 'script-connection'
+    azureSubscription: 'Pexabo'
     ScriptType: 'FilePath'
     ScriptPath: './Deploy-AzTemplate.ps1'
     ScriptArguments: -Location 'centralus' -ResourceGroupName 'demogroup' -TemplateFile templates\mainTemplate.json
