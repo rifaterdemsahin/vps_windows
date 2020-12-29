@@ -108,16 +108,6 @@
     "networkSecurityGroupName": "default-NSG"
   },
   "resources": [
-     {
-            "type": "Microsoft.Authorization/roleAssignments",
-            "apiVersion": "2018-09-01-preview",
-            "name": "[guid(resourceGroup().id)]",
-            "properties": {
-                "roleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'acdd72a7-3385-48ef-bd42-f606fba81ae7')]",
-                "principalId": "d7c010df-e10c-4fcf-93f8-ee33fe58b076"
-            }
-        }
-    ,
     {
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2019-06-01",
