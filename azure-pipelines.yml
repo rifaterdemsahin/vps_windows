@@ -9,7 +9,17 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+ 
 steps:
+- bash: |
+    MAJOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f1)
+    echo "This is the major run number: $MAJOR_RUN"
+    echo "##vso[task.setvariable variable=major]$MAJOR_RUN"
+
+    MINOR_RUN=$(echo $BUILD_BUILDNUMBER | cut -d '.' -f2)
+    echo "This is the minor run number: $MINOR_RUN"
+    echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
+    
 - script:  echo "RDS Server Creation Started New Account"
   displayName: 'STEP 1'
 
@@ -19,7 +29,7 @@ steps:
     ScriptType: 'FilePath'
     
     ScriptPath: './Deploy-AzTemplate.ps1'
-    ScriptArguments: -Location 'uksouth' -ResourceGroupName 'RDS5VM' -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'templates'
+    ScriptArguments: -Location 'uksouth' -ResourceGroupName $(minor) -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'templates'
     azurePowerShellVersion: 'LatestVersion'
 
 - script:  echo "RDS Server Creation Ended"
