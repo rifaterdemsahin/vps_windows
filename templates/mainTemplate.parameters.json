@@ -3,8 +3,8 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-       "defaultValue": "admin",
-       "value": "admin"
+       "defaultValue": "adminpexabo",
+       "value": "adminpexabo"
     },
     "adminPassword": {
        "defaultValue": "KKmm1234!KKmm1234!",
