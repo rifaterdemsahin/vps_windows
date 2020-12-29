@@ -19,7 +19,8 @@ steps:
     ScriptType: 'FilePath'
     
     ScriptPath: './Deploy-AzTemplate.ps1'
-    ScriptArguments: -Location 'uksouth' -ResourceGroupName 'RDS3' -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'c:\agent_work\1\a'
+    ScriptArguments: -Location 'uksouth' -adminUsername 'pexabo' adminPassword='YYmm123!'  -ResourceGroupName 'RDS4' -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'c:\agent_work\1\a'
+#storage    ScriptArguments: -Location 'uksouth' -ResourceGroupName 'RDS3' -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'c:\agent_work\1\a'
     azurePowerShellVersion: 'LatestVersion'
 
 - script:  echo "RDS Server Creation Ended"
