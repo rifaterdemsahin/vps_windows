@@ -10,9 +10,16 @@
        "defaultValue": "KKmm1234!KKmm1234!",
        "value": "KKmm1234!KKmm1234!"
     },
+    "vmName": {
+      "type": "string",
+      "defaultValue": "simple-vm",
+      "metadata": {
+        "description": "Name of the virtual machine."
+      }
+    },
     "dnsLabelPrefix": {
-       "defaultValue": [concat('pexabo', resourceGroup().id)],
-       "value": [concat('pexabo', resourceGroup().id)]
+       "defaultValue":  "[toLower(concat(parameters('vmName'),'-', uniqueString(resourceGroup().id, parameters('vmName'))))]",
+       "value":  "[toLower(concat(parameters('vmName'),'-', uniqueString(resourceGroup().id, parameters('vmName'))))]"
     }
   }
 }
