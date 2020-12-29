@@ -17,9 +17,9 @@ steps:
   inputs:
     azureSubscription: 'Pexabo'
     ScriptType: 'FilePath'
-    ArtifactStagingDirectory: ''
+    
     ScriptPath: './Deploy-AzTemplate.ps1'
-    ScriptArguments: -Location 'centralus' -ResourceGroupName 'demogroup' -TemplateFile templates\mainTemplate.json
+    ScriptArguments: -Location 'centralus' -ResourceGroupName 'demogroup' -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory ''
     azurePowerShellVersion: 'LatestVersion'
 
 - script:  echo "RDS Server Creation Ended"
