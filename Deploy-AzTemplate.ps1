@@ -10,7 +10,7 @@ Param(
     [string] $StorageAccountName,
     [string] $StorageContainerName = $ResourceGroupName.ToLowerInvariant() + '-stageartifacts',
     [string] $TemplateFile = $ArtifactStagingDirectory + '\mainTemplate.json',
-    [string] $TemplateParametersFile = $ArtifactStagingDirectory + '.\mainTemplate.parameters.json',
+    [string] $TemplateParametersFile = $ArtifactStagingDirectory + '\mainTemplate.parameters.json',
     [string] $DSCSourceFolder = $ArtifactStagingDirectory + '.\DSC',
     [switch] $BuildDscPackage,
     [switch] $ValidateOnly,
