@@ -11,8 +11,8 @@
        "value": "KKmm1234!KKmm1234!"
     },
     "dnsLabelPrefix": {
-       "defaultValue": "[concat('pexabo', resourceGroup().id)]",
-       "value": "[concat('pexabo', resourceGroup().id)]"
+       "defaultValue": [concat('pexabo', resourceGroup().id)],
+       "value": [concat('pexabo', resourceGroup().id)]
     }
   }
 }
