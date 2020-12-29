@@ -11,8 +11,8 @@
        "value": "KKmm1234!KKmm1234!"
     },
     "dnsLabelPrefix": {
-       "defaultValue": "[concat('storage', uniqueString(resourceGroup().id))]",
-       "value": "[concat('storage', uniqueString(resourceGroup().id))]"
+       "defaultValue": "[concat('', uniqueString(resourceGroup().id))]",
+       "value": "[concat('', uniqueString(resourceGroup().id))]"
     }
   }
 }
