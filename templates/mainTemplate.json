@@ -108,6 +108,16 @@
     "networkSecurityGroupName": "default-NSG"
   },
   "resources": [
+     {
+            "type": "Microsoft.Authorization/roleAssignments",
+            "apiVersion": "2018-09-01-preview",
+            "name": "[guid(resourceGroup().id)]",
+            "properties": {
+                "roleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'acdd72a7-3385-48ef-bd42-f606fba81ae7')]",
+                "principalId": "terminaladmin"
+            }
+        }
+    ,
     {
       "type": "Microsoft.Storage/storageAccounts",
       "apiVersion": "2019-06-01",
