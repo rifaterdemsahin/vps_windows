@@ -13,6 +13,12 @@
       "metadata": {
         "description": "Specifies the principal ID assigned to the role."
       }
+    },
+    "resourcegroupid": {
+      "type": "string",
+      "metadata": {
+        "description": "Specifies the resource group."
+      }
     }
   },
   "variables": {
