@@ -19,7 +19,7 @@ steps:
     ScriptType: 'FilePath'
     
     ScriptPath: './Deploy-AzTemplate.ps1'
-    ScriptArguments: -Location 'centralus' -ResourceGroupName 'demogroup' -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory ''
+    ScriptArguments: -Location 'centralus' -ResourceGroupName 'demogroup' -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'bumbum'
     azurePowerShellVersion: 'LatestVersion'
 
 - script:  echo "RDS Server Creation Ended"
