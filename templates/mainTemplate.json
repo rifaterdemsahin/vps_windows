@@ -1,1 +1,77 @@
 
+{
+  "name": "string",
+  "type": "Microsoft.Storage/storageAccounts",
+  "apiVersion": "2019-04-01",
+  "sku": {
+    "name": "string",
+    "restrictions": [
+      {
+        "reasonCode": "string"
+      }
+    ]
+  },
+  "kind": "string",
+  "location": "string",
+  "tags": {},
+  "identity": {
+    "type": "SystemAssigned"
+  },
+  "properties": {
+    "customDomain": {
+      "name": "string",
+      "useSubDomainName": "boolean"
+    },
+    "encryption": {
+      "services": {
+        "blob": {
+          "enabled": "boolean"
+        },
+        "file": {
+          "enabled": "boolean"
+        }
+      },
+      "keySource": "string",
+      "keyvaultproperties": {
+        "keyname": "string",
+        "keyversion": "string",
+        "keyvaulturi": "string"
+      }
+    },
+    "networkAcls": {
+      "bypass": "string",
+      "virtualNetworkRules": [
+        {
+          "id": "string",
+          "action": "Allow",
+          "state": "string"
+        }
+      ],
+      "ipRules": [
+        {
+          "value": "string",
+          "action": "Allow"
+        }
+      ],
+      "defaultAction": "string"
+    },
+    "accessTier": "string",
+    "azureFilesIdentityBasedAuthentication": {
+      "directoryServiceOptions": "string",
+      "activeDirectoryProperties": {
+        "domainName": "string",
+        "netBiosDomainName": "string",
+        "forestName": "string",
+        "domainGuid": "string",
+        "domainSid": "string",
+        "azureStorageSid": "string"
+      }
+    },
+    "supportsHttpsTrafficOnly": "boolean",
+    "isHnsEnabled": "boolean",
+    "largeFileSharesState": "string",
+    "allowBlobPublicAccess": "boolean",
+    "minimumTlsVersion": "string"
+  },
+  "resources": []
+}
