@@ -9,12 +9,6 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-variables:
-- name: adminUsername
-  value: 'pexabo'
-- name: adminPassword
-  value: 'YYmm123!'
-
 steps:
 - script:  echo "RDS Server Creation Started New Account"
   displayName: 'STEP 1'
