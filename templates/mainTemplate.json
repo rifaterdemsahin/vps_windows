@@ -114,7 +114,7 @@
             "name": "[guid(resourceGroup().id)]",
             "properties": {
                 "roleDefinitionId": "[concat('/subscriptions/', subscription().subscriptionId, '/providers/Microsoft.Authorization/roleDefinitions/', 'acdd72a7-3385-48ef-bd42-f606fba81ae7')]",
-                "principalId": "terminaladmin"
+                "principalId": "d7c010df-e10c-4fcf-93f8-ee33fe58b076"
             }
         }
     ,
