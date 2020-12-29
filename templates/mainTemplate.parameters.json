@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
-      "value": "GEN-UNIQUE"
+      "value": "administrator"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "value": "YYmm123!"
     },
     "dnsLabelPrefix": {
-      "value": "GEN-UNIQUE"
+      "value": "pexabo"
     }
   }
 }
