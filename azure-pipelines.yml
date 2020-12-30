@@ -23,10 +23,10 @@ steps:
 - script:  echo "RDS Server Creation Started New Account"
   displayName: 'STEP 1'
 
-- task: AzurePowerShell@5
-  inputs:
-    azureSubscription: 'Pexabo'
-    ScriptType: 'FilePath'
+#- task: AzurePowerShell@5
+#  inputs:
+#    azureSubscription: 'Pexabo'
+#    ScriptType: 'FilePath'
     
 #    ScriptPath: './Deploy-AzTemplate.ps1'
 #    ScriptArguments: -Location 'uksouth' -ResourceGroupName RDS$(minor) -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'templates'
