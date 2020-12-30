@@ -23,6 +23,11 @@ steps:
 - script:  echo "RDS Server Creation Started New Account"
   displayName: 'STEP 1'
 
+- task: OctopusPack@4
+  inputs:
+    PackageId: 'testpackage'
+    PackageFormat: 'NuPkg'
+
 #- task: OctopusPack
 
 #- task: AzurePowerShell@5
