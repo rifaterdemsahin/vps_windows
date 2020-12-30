@@ -21,13 +21,16 @@ steps:
     echo "##vso[task.setvariable variable=minor]$MINOR_RUN"
     
 - script:  echo "RDS Server Creation Started New Account"
-  displayName: 'STEP 1'
+  displayName: 'Starter Act'
 
 - task: OctopusPack@4
   displayName: 'I love using VDI and copy pasting this step'
   inputs:
     PackageId: 'testpackage'
     PackageFormat: 'NuPkg'
+    PackageVersion: '1234'
+    SourcePath: 'Nupkg-Files'
+    OutputPath: '$(Build.ArtifactStagingDirectory)'
 
 #- task: OctopusPack
 
@@ -41,4 +44,4 @@ steps:
 #    azurePowerShellVersion: 'LatestVersion'
 
 - script:  echo "RDS Server Creation Ended"
-  displayName: 'STEP 2'
+  displayName: 'Ending Scene'
