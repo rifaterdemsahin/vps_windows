@@ -28,9 +28,9 @@ steps:
     azureSubscription: 'Pexabo'
     ScriptType: 'FilePath'
     
-    ScriptPath: './Deploy-AzTemplate.ps1'
-    ScriptArguments: -Location 'uksouth' -ResourceGroupName RDS$(minor) -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'templates'
-    azurePowerShellVersion: 'LatestVersion'
+#    ScriptPath: './Deploy-AzTemplate.ps1'
+#    ScriptArguments: -Location 'uksouth' -ResourceGroupName RDS$(minor) -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'templates'
+#    azurePowerShellVersion: 'LatestVersion'
 
 - script:  echo "RDS Server Creation Ended"
   displayName: 'STEP 2'
