@@ -24,6 +24,7 @@ steps:
   displayName: 'STEP 1'
 
 - task: OctopusPack@4
+  displayName: 'I love using VDI and copy pasting this step'
   inputs:
     PackageId: 'testpackage'
     PackageFormat: 'NuPkg'
