@@ -29,7 +29,8 @@ steps:
     PackageId: 'testpackage'
     PackageFormat: 'NuPkg'
     PackageVersion: '1234'
-    SourcePath: 'Nupkg-Files'
+#    SourcePath: 'Nupkg-Files'
+    SourcePath: '.'
     OutputPath: '$(Build.ArtifactStagingDirectory)'
 
 #- task: OctopusPack
