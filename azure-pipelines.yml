@@ -45,6 +45,12 @@ steps:
     SourcePath: '.'
     OutputPath: '$(Build.ArtifactStagingDirectory)'
 
+- task: OctopusPush@4
+  inputs:
+    OctoConnectedServiceName: 'Octopus'
+    Space: 'Spaces-1'
+    Package: 'Unicorn'
+    Replace: 'false'
 #- task: OctopusPack
 
 #- task: AzurePowerShell@5
