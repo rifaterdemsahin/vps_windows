@@ -51,16 +51,6 @@ steps:
     Space: 'Spaces-1'
     Package: '$(Build.ArtifactStagingDirectory)/*.nupkg'
     Replace: 'false'
-#- task: OctopusPack
-
-#- task: AzurePowerShell@5
-#  inputs:
-#    azureSubscription: 'Pexabo'
-#    ScriptType: 'FilePath'
-    
-#    ScriptPath: './Deploy-AzTemplate.ps1'
-#    ScriptArguments: -Location 'uksouth' -ResourceGroupName RDS$(minor) -TemplateFile templates\mainTemplate.json -ArtifactStagingDirectory 'templates'
-#    azurePowerShellVersion: 'LatestVersion'
 
 - script:  echo "RDS Server Creation Ended"
   displayName: 'Ending Scene'
