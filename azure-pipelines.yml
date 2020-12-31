@@ -29,6 +29,12 @@ steps:
     SourceFolder: 'templates'
     Contents: '**'
     TargetFolder: 'Nupkg-Files'
+- task: CopyFiles@2
+  displayName: 'Started Copying the files'
+  inputs:
+    SourceFolder: 'templatesVM'
+    Contents: '**'
+    TargetFolder: 'Nupkg-Files'
 - task: OctopusPack@4
   displayName: 'Start Packing Files for Octopus'
   inputs:
