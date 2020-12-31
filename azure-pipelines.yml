@@ -49,7 +49,7 @@ steps:
   inputs:
     OctoConnectedServiceName: 'Octopus'
     Space: 'Spaces-1'
-    Package: 'Nupkg-Files'
+    Package: '*.nupkg'
     Replace: 'false'
 #- task: OctopusPack
 
