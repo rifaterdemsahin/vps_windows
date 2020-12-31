@@ -49,7 +49,7 @@ steps:
   inputs:
     OctoConnectedServiceName: 'Octopus'
     Space: 'Spaces-1'
-    Package: '*.nupkg'
+    Package: '$(Build.ArtifactStagingDirectory)\*.nupkg'
     Replace: 'false'
 #- task: OctopusPack
 
