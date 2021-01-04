@@ -38,7 +38,7 @@ steps:
 - task: OctopusPack@4
   displayName: 'Start Packing Files for Octopus'
   inputs:
-    PackageId: 'testpackage'
+    PackageId: 'FunctionPackage'
     PackageFormat: 'NuPkg'
     PackageVersion: '1235'
 #    SourcePath: 'Nupkg-Files'
