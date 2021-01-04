@@ -40,7 +40,7 @@ steps:
   inputs:
     PackageId: 'FunctionPackage'
     PackageFormat: 'NuPkg'
-    PackageVersion: '1235'
+    PackageVersion: '1236'
 #    SourcePath: 'Nupkg-Files'
     SourcePath: '.'
     OutputPath: '$(Build.ArtifactStagingDirectory)'
