@@ -35,13 +35,13 @@ steps:
 #    SourceFolder: 'templatesVM'
 #    Contents: '**'
 #    TargetFolder: 'Nupkg-Files'
+#  Predefined variables https://docs.microsoft.com/en-us/azure/devops/pipelines/build/variables?view=azure-devops&tabs=yaml
 - task: OctopusPack@4
   displayName: 'Start Packing Files for Octopus'
   inputs:
     PackageId: 'FunctionPackage'
     PackageFormat: 'NuPkg'
-    PackageVersion: '1236'
-#    SourcePath: 'Nupkg-Files'
+    PackageVersion: '$(Build.BuildId)'
     SourcePath: '.'
     OutputPath: '$(Build.ArtifactStagingDirectory)'
 
