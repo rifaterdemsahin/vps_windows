@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appName": {
-      "value": "FCAWeeklyUpdateProcess"
+      "value": "[concat('FCAWeeklyUpdateProcess-', uniqueString(resourceGroup().id))]"
     },
     "appInsightsLocation":{
       "value": "uksouth"
